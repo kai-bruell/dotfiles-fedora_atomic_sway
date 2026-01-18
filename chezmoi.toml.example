@@ -1,0 +1,15 @@
+# Beispiel für maschinenspezifische Konfiguration
+# Kopiere diese Datei nach ~/.config/chezmoi/chezmoi.toml
+# und passe die Werte an deine Maschine an
+#
+# Diese Datei wird NICHT eingecheckt - sie ist nur Dokumentation
+
+[data]
+    email = "deine@email.de"
+    name = "Dein Name"
+    hostname = "mein-rechner"
+    is_work = false
+
+    # Optionale maschinenspezifische Overrides:
+    # gpu = "nvidia"  # oder "amd", "intel"
+    # monitors = 2

@@ -1,0 +1,13 @@
+# Globale Defaults - gelten für alle Maschinen
+# Diese Werte können in Templates mit {{ .variablename }} verwendet werden
+
+[editor]
+name = "nvim"
+visual = "nvim"
+
+[theme]
+font = "JetBrainsMono Nerd Font"
+font_size = 11
+
+[git]
+default_branch = "main"

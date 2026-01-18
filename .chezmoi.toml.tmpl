@@ -1,0 +1,8 @@
+# Template für maschinenspezifische Konfiguration
+# Wird beim `chezmoi init` ausgeführt und generiert ~/.config/chezmoi/chezmoi.toml
+
+[data]
+    email = "{{ promptString "E-Mail Adresse" }}"
+    name = "{{ promptString "Dein Name" }}"
+    hostname = "{{ .chezmoi.hostname }}"
+    is_work = {{ promptBool "Ist das ein Arbeitsrechner" }}
