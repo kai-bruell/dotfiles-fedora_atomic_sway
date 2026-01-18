@@ -83,7 +83,7 @@ input type:keyboard {
     bindsym $mod+w exec ~/.config/sway/scripts/tmux-session-picker.sh
 
     # Apps
-    bindsym $mod+e exec firefox
+    bindsym $mod+e exec flatpak run org.mozilla.firefox
     bindsym $mod+b exec blueman-manager
     bindsym $mod+n exec nm-connection-editor
     bindsym $mod+j exec foot -e tmux new-session nvim
