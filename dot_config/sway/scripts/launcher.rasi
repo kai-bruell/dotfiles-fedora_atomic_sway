@@ -1,0 +1,50 @@
+* {
+    background-color: transparent;
+    text-color: #ffffff;
+}
+
+window {
+    width: 500px;
+    background-color: #1a1a1a;
+    border: 1px;
+    border-color: #cc0000;
+    padding: 0;
+}
+
+mainbox {
+    padding: 12px;
+    background-color: #1a1a1a;
+}
+
+inputbar {
+    padding: 10px;
+    background-color: #0a0a0a;
+    text-color: #cc0000;
+    children: [prompt, entry];
+}
+
+prompt {
+    text-color: #cc0000;
+    padding: 0px 8px 0px 0px;
+}
+
+entry {
+    text-color: #ffffff;
+}
+
+listview {
+    scrollbar: false;
+    spacing: 2px;
+    background-color: transparent;
+}
+
+element {
+    padding: 10px;
+    background-color: transparent;
+    text-color: #999999;
+}
+
+element selected {
+    background-color: #cc0000;
+    text-color: #ffffff;
+}
