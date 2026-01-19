@@ -11,22 +11,16 @@
         "sway/mode",
         "sway/scratchpad"
     ],
-    "modules-center": [
-        "sway/window"
-    ],
+    "modules-center": [],
     "modules-right": [
-        "idle_inhibitor",
-        "pulseaudio",
-        "network",
-        "power-profiles-daemon",
-        "cpu",
-        "memory",
+                "cpu",
         "temperature",
+        "memory",
         "backlight",
-        "sway/language",
+        "pulseaudio",
+        "tray",
         "battery",
-        "clock",
-        "tray"
+        "clock"
     ],
     // Modules configuration
     // "sway/workspaces": {
@@ -170,12 +164,10 @@
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon} ",
+        "format-bluetooth-muted": " {icon} ",
+        "format-muted": " ",
         "format-icons": {
             "headphone": "",
             "hands-free": "",
