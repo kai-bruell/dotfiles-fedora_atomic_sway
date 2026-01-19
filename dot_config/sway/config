@@ -28,6 +28,10 @@ set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
 # Requires: desktop-backgrounds-compat, swaybg, jxl-pixbuf-loader
 output * bg #000000 solid_color
 output * scale 1.2
+
+# Dark mode for GTK apps
+exec gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+exec gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
 #
 # Example configuration:
 #
