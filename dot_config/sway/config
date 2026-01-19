@@ -27,6 +27,7 @@ set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # Requires: desktop-backgrounds-compat, swaybg, jxl-pixbuf-loader
 output * bg /usr/share/backgrounds/default.jxl fill
+output * scale 1.5
 #
 # Example configuration:
 #
@@ -65,6 +66,19 @@ input type:keyboard {
     xkb_layout de
     xkb_variant nodeadkeys
 }
+
+# Window style: no title bar, 4px border
+default_border pixel 2
+
+# Gaps between windows
+gaps inner 2
+gaps outer 1
+
+# Border colors (#cc0000 red from rofi theme)
+# class                 border  background text    indicator child_border
+client.focused          #cc0000 #1a1a1a    #ffffff #cc0000   #cc0000
+client.unfocused        #333333 #1a1a1a    #888888 #333333   #333333
+client.focused_inactive #333333 #1a1a1a    #888888 #333333   #333333
 
 ### Key bindings
 #
