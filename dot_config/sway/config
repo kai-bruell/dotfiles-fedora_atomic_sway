@@ -29,9 +29,8 @@ set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
 output * bg #000000 solid_color
 output * scale 1.2
 
-# Dark mode for GTK apps
+# Dark mode
 exec gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
-exec gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
 #
 # Example configuration:
 #
