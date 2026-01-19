@@ -1,0 +1,17 @@
+# Combined Analog + HDMI audio profile
+# Shows both speakers and HDMI as separate output options
+
+monitor.alsa.rules = [
+  {
+    matches = [
+      { device.name = "alsa_card.pci-0000_00_1f.3" }
+    ]
+    actions = {
+      update-props = {
+        api.alsa.use-acp = true
+        device.profile-set = "{{ .chezmoi.homeDir }}/.config/alsa-card-profile/mixer/profile-sets/analog-hdmi-combined.conf"
+        device.profile = "output:analog-stereo+hdmi-stereo"
+      }
+    }
+  }
+]
