@@ -23,7 +23,16 @@
         "clock"
     ],
     // Modules configuration
-    // "sway/workspaces": {
+    // Dynamische Workspaces pro Monitor:
+    // Monitor 0: 1-9, Monitor 1: 11-19, Monitor 2: 21-29, ...
+    // all-outputs: false zeigt nur Workspaces des eigenen Monitors
+    "sway/workspaces": {
+        "disable-scroll": false,
+        "all-outputs": false,
+        "format": "{name}"
+    },
+    // Old sway/workspaces config (commented out):
+    // "sway/workspaces-old": {
     //     "disable-scroll": true,
     //     "all-outputs": true,
     //     "warp-on-scroll": false,
