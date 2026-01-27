@@ -24,3 +24,9 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 # Aliases
 alias ll="ls -la"
 alias ..="cd .."
+
+# Toolbox/Distrobox indicator
+if [ -f /run/.toolboxenv ]; then
+    source /run/.containerenv
+    PROMPT="(toolbox: $name) $PROMPT"
+fi
