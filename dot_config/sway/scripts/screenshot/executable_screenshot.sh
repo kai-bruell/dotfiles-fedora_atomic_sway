@@ -4,7 +4,7 @@
 # Supports both X11 and Wayland
 
 # Output directory and filename
-SCREENSHOT_DIR="$HOME/Pictures/Screenshots"
+SCREENSHOT_DIR="$(xdg-user-dir PICTURES)/Screenshots"
 mkdir -p "$SCREENSHOT_DIR"
 FILENAME="$SCREENSHOT_DIR/screenshot_$(date +%Y%m%d_%H%M%S).png"
 
