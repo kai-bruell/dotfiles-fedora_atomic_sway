@@ -27,7 +27,11 @@ alias ..="cd .."
 alias start-webserver="python3 -m http.server"
 
 # Toolbox/Distrobox indicator
-if [ -f /run/.toolboxenv ]; then
+if [ -f /run/.containerenv ]; then
     source /run/.containerenv
-    PROMPT="(toolbox: $name) $PROMPT"
+    if [ -n "$DISTROBOX_ENTER_PATH" ]; then
+        PROMPT="(distrobox: $name) $PROMPT"
+    else
+        PROMPT="(toolbox: $name) $PROMPT"
+    fi
 fi
