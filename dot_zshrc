@@ -24,6 +24,7 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 # Aliases
 alias ll="ls -la"
 alias ..="cd .."
+alias start-webserver="python3 -m http.server"
 
 # Toolbox/Distrobox indicator
 if [ -f /run/.toolboxenv ]; then
