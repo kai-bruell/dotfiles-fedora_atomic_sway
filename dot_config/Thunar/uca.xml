@@ -12,4 +12,16 @@
 	<startup-notify/>
 	<directories/>
 </action>
+<action>
+	<icon>network-server</icon>
+	<name>Open Webserver Here</name>
+	<submenu></submenu>
+	<unique-id>1768897026729571-2</unique-id>
+	<command>foot -e tmux new-session -c %f python3 -m http.server -d %f</command>
+	<description>Start a Python HTTP server in this directory</description>
+	<range></range>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
 </actions>
