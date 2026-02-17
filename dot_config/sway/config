@@ -35,6 +35,9 @@ output * scale 1.2
 # Dark mode
 exec gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 
+# Autotiling: Hyprland-like dwindle tiling (auto split h/v based on dimensions)
+exec ~/.local/bin/autotiling
+
 #
 # Example configuration:
 #
